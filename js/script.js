@@ -145,3 +145,45 @@ sumNums(2,2);
 
 
 var mySum = sumNums(923,13454);
+
+
+
+var apollo = {
+    isDog: true,
+    breed:'mutt',
+    legs: 4,
+    age: 2,
+    toys: ['Mrs. Moose','Bone','Half a Giraffe'],
+          //This is the speak method on the dog object, methods are functions that are the property of an object in JS
+    speak: function() {
+      console.log('woof woof');
+    },
+    sayHiTo: function(name, age){
+      console.log('Hello ' + name + ' woof woof! You\'re ' + age);
+    }
+
+};
+    //This calls the speak method on the apollo
+    apollo.speak();
+    //orders matter when using multiple perameters
+    apollo.sayHiTo('Stella',5);
+
+
+
+
+
+var neptune = {
+  isCat: true,
+  legs: 4,
+  age:2,
+  toys: ['mouse','ball'],
+  speak: function(name){
+    console.log("Meow meow meow " + name);
+  }
+}
+
+neptune.speak('kenny');
+
+
+//The console object is a global object crreated within the browser, log is a method on that object.
+console.log(console);
